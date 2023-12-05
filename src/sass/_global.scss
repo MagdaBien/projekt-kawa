@@ -1,0 +1,95 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 0;
+  background: $color-light;
+  font-family: $font-text;
+  font-size: $base-size;
+  line-height: $base-line-height;
+  font-weight: $font-normal;
+  color: $color-dark;
+}
+  
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1 {
+  font-size: 100px;
+  position: relative;
+  color: $color-main;
+  text-align: left;
+  font-weight: $font-bold;
+  letter-spacing: 17px;
+  line-height: 1;
+  padding: 15 auto;
+  margin: 0 auto;
+
+  &::after{
+    content: " ";
+    position: absolute;
+    background: $color-main;
+    width: 20%;
+    height: 6px;
+    left: 40%;
+    bottom: -50px;
+  }
+}  
+
+h2 {
+  font-size: $bigger-size;
+  position: relative;
+  color: $color-main;
+  text-align: center;
+  font-weight: $font-bold;
+  letter-spacing: 15px;
+  line-height: $bigger-line-height;
+  margin: 50px auto 60px auto;
+
+
+  &::after{
+    content: " ";
+    position: absolute;
+    background: $color-main;
+    width: 60%;
+    height: 6px;
+    left: 20%;
+    bottom: 0;
+  }
+}
+
+h3 {
+  font-size: $medium2-size;
+  position: relative;
+  color: $color-dark;
+  text-align: left;
+  font-weight: $font-bold;
+  letter-spacing: 5px;
+  line-height: 1;
+  padding: 15 auto;
+  text-transform: uppercase;
+  margin: 0 0 16px 0;
+
+  &::after{
+    content: " ";
+    position: absolute;
+    background: $color-main;
+    width: 20%;
+    height: 4px;
+    left: 0;
+    bottom: -44px;
+  }
+}
+
+.right {
+  text-align: right;
+}
+
+.gold {
+  color: $color-main;
+}

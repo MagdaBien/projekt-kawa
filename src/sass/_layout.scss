@@ -1,0 +1,223 @@
+.main-nav {
+  a {
+    color: $color-main;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+}
+
+#pages {
+  > * {
+    display: none;
+  }
+  
+  > .active {
+    display: block;
+  }
+}
+
+.demo-icon {
+  color: $color-light;
+  font-weight: 100;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-image: url("../images/background.png");
+  background-size: cover;
+}
+
+.aboutTlo {
+  width: 100%;
+  background-image: url("../images/about-us.jpg");
+  background-size: cover;
+}
+
+.aboutBlack {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+footer {
+  background-color: $color-light;
+}
+
+.taste {
+  margin-left: 180px;
+}
+
+.containerFlexRow, .containerFlexRowP {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}  
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.containerFlexRowP {
+  justify-content: space-around;
+}
+
+div.containerFlexRowP:nth-child(even) { 
+  flex-direction: row-reverse;
+}
+
+.containerFlexCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+}
+
+.menu-wide {
+  display: block;
+}
+
+.aboutAs, .aboutAsRight {
+  font-size: $medium-size;
+  color: $color-light;
+  line-height: $medium-line-height;
+  font-weight: $font-semibold;
+  font-style: italic;
+  letter-spacing: 1px;
+  width: 80%;
+  margin: auto;
+  padding-bottom: 90px;
+  margin-top: 90px;
+
+}
+
+.aboutAsRight {
+  margin-top: 0px;
+  text-align: right;
+}
+
+.logo {
+  color: $color-light;
+  font-size: 36px;
+  font-weight: $font-bold;
+  letter-spacing: 10px;
+  line-height: 0.8;
+  margin-top: 30px;
+}
+
+.sublogo {
+  font-size: $base-size;
+  letter-spacing: 5px;
+}
+
+p.foot {
+  text-align: center;
+  margin: 34px;
+}
+
+a.top-nav  {
+  font-size: $smaller-medium-size;
+  color: $color-light;
+  margin: 0 20px;
+  font-weight: $font-semibold;
+  color: $light-links;
+}
+
+a.top-nav:hover {
+  color: $color-main;
+}
+
+p.discover {
+  text-align: center;
+  color: $color-light;
+  font-size: 34px;
+  font-weight: $font-normal;
+}
+
+h2.about {
+  padding-top: 80px;
+}
+
+
+.border {
+  border: 1px solid yellow;
+}
+
+.border2 {
+  border: 1px solid pink;
+}
+
+.coffee-desc, .coffee-img {
+  padding: 20px;
+  width: 48%;
+}
+
+img.coffee {
+  box-shadow: 10px 10px 25px 5px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  margin: 0px 0 20px 0;
+}
+
+p.desc { 
+  float: right;
+  width: 75%;
+  padding: 0;
+}
+
+p.score {
+  width: 100%;
+  clear: both;
+  font-size: $smaller-medium-size;
+  font-weight: $font-bold;
+  padding-top: 30px;
+}
+
+img.prize {
+  float: right;
+}
+
+.formlegend {
+  text-align: center;
+  font-size: 22px;
+  font-weight: $font-bold;
+  letter-spacing: 5px;
+  margin: 30px auto 22px auto;
+}
+
+.form-control {
+  border-radius: 0;
+  border: 2px solid $color-dark;
+  max-width: 530px;
+  margin: 0 auto 0 auto;
+}
+
+.form-h1 {
+  height: 60px
+}
+.form-h2 {
+  height: 160px;
+}
+
+.form-btn {
+  border-radius: 0;
+  width: 240px;
+  margin: 44px auto 120px auto;
+  background-color: $color-main;
+  color: $color-light;
+  height: 60px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: $font-bold;
+  letter-spacing: 5px;
+  border: 0;
+}
+
+

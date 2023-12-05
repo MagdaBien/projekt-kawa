@@ -1,0 +1,212 @@
+/* Media */
+
+@media (max-width: 578px) {
+  h1 {
+    font-size: $medium2-size;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: $medium2-size;
+    margin: 30px auto 10px auto;
+  }
+
+  h3 {
+    font-size: $medium-size;
+  }
+
+  .taste { 
+    margin-left: 0;
+  }
+
+  div.containerFlexRowP {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  div.containerFlexRowP:nth-child(even) { 
+    flex-direction: column-reverse;
+    width: 100%;
+  }  
+
+  .coffee-desc, .coffee-img {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .sublogo {
+    letter-spacing: 2px;
+  }
+
+  p.aboutAs, p.aboutAsRight {
+    font-size: $small-medium-size;
+    font-weight: $font-normal;
+  }
+
+  p.discover {
+    font-size: 20px;
+  }
+
+  img.prize { 
+    display: block;
+    margin: 0 0 10px 0;
+    width: 25%;
+  }
+}
+
+@media (min-width: 578px) and (max-width: 767px) {
+  
+  h1 {
+    font-size: 70px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: $medium2-size;
+    margin: 30px auto 10px auto;
+  }
+
+  h3 {
+    font-size: $medium-size;
+  }  
+  
+  .taste { 
+    margin-left: 0;
+  }
+
+  .sublogo {
+    letter-spacing: 4px;
+  }
+
+  div.containerFlexRowP {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  div.containerFlexRowP:nth-child(even) { 
+    flex-direction: column-reverse;
+    width: 100%;
+  }  
+
+  .coffee-desc, .coffee-img {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  p.aboutAs, p.aboutAsRight {
+    font-size: $small-medium-size;
+    font-weight: $font-normal;
+  }
+
+  p.discover {
+    font-size: 24px;
+  }
+
+  img.prize { 
+    display: block;
+    margin: 0 0 10px 0;
+    width: 20%;
+  } 
+  
+
+  
+}
+  
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  h1 {
+    font-size: 85px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 60px;
+    margin: 30px auto 10px auto;
+  }
+
+  h3 {
+    font-size: $medium-size;
+  }  
+
+  div.containerFlexRowP {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  div.containerFlexRowP:nth-child(even) { 
+    flex-direction: column-reverse;
+    width: 100%;
+  }  
+
+  .coffee-desc, .coffee-img {
+    padding: 10px;
+    width: 100%;
+  }
+
+
+
+  p.aboutAs, p.aboutAsRight {
+    font-size: 30px;
+    font-weight: $font-normal;
+  }
+
+  p.discover {
+    font-size: 24px;
+  }
+
+  img.prize { 
+    display: block;
+    margin: 0 0 10px 0;
+    width: 20%;
+  } 
+  
+}
+
+
+ 
+@media (min-width: 992px) and (max-width: 1200px) {
+  
+  h1 {
+    font-size: 100px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 70px;
+    margin: 30px auto 10px auto;
+  }
+
+  h3 {
+    font-size: $medium-size;
+  }  
+
+  .coffee-desc, .coffee-img {
+    padding: 15px;
+    width: 49%;
+  }
+
+
+  p.aboutAs, p.aboutAsRight {
+    font-size: 32px;
+    font-weight: $font-normal;
+  }
+
+  p.discover {
+    font-size: 24px;
+  }
+
+  img.prize { 
+    display: block;
+    margin: 0 0 10px 0;
+    width: 30%;
+  } 
+  
+}
