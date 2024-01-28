@@ -2,10 +2,9 @@
   a {
     color: $color-main;
     text-decoration: none;
-    text-align: center;
   }
-  
 }
+
 
 #pages {
   > * {
@@ -78,7 +77,6 @@ div.containerFlexRowP:nth-child(even) {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
-
 }
 
 .menu-wide {
@@ -146,7 +144,6 @@ h2.about {
   padding-top: 80px;
 }
 
-
 .border {
   border: 1px solid yellow;
 }
@@ -200,8 +197,9 @@ img.prize {
 }
 
 .form-h1 {
-  height: 60px
+  height: 60px;
 }
+
 .form-h2 {
   height: 160px;
 }
@@ -220,4 +218,16 @@ img.prize {
   border: 0;
 }
 
+.navbar-toggler {
+  margin: 20px 0 15px 25px;
+  display: block;
+  text-align: right;
+}
 
+.nav-item {
+  text-align: left;
+}
+
+.burger-menu {
+  text-align: right;
+}
