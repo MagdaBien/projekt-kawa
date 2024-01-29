@@ -3,6 +3,9 @@
     color: $color-main;
     text-decoration: none;
   }
+  .active {
+    color: $color-main!important;
+  }
 }
 
 
@@ -108,7 +111,6 @@ div.containerFlexRowP:nth-child(even) {
   font-weight: $font-bold;
   letter-spacing: 10px;
   line-height: 0.8;
-  margin-top: 30px;
 }
 
 .sublogo {
@@ -124,7 +126,7 @@ p.foot {
 a.top-nav  {
   font-size: $smaller-medium-size;
   color: $color-light;
-  margin: 0 20px;
+  margin: 0 0 0 20px;
   font-weight: $font-semibold;
   color: $light-links;
 }
@@ -219,15 +221,35 @@ img.prize {
 }
 
 .navbar-toggler {
-  margin: 20px 0 15px 25px;
   display: block;
   text-align: right;
+  margin: 30px 0 0 0 ; 
 }
 
 .nav-item {
-  text-align: left;
+  text-align: right;
+  padding: 0;
+  margin: 0;
 }
 
 .burger-menu {
   text-align: right;
 }
+
+
+
+.navbar-brand { 
+  margin: 0;
+  padding: 30px 0 0 0 ; 
+}
+
+.navbar-collapse {
+  text-align: right;
+
+  
+}
+
+.navbar-nav {    text-align: right; float: right; right: 0; }
+
+ 
+

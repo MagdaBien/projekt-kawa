@@ -1,10 +1,10 @@
-import { settings, select, classNames } from './settings.js';
-import Product from './components/Product.js';
+import { settings, select, classNames } from "./settings.js";
+import Product from "./components/Product.js";
 
 const app = {
   initData: function () {
     const thisApp = this;
-    const url = settings.db.url + '/' + settings.db.products;
+    const url = settings.db.url + "/" + settings.db.products;
     this.data = {};
     fetch(url)
       .then((rawResponse) => {
@@ -32,9 +32,9 @@ const app = {
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
     thisApp.navLinks = document.querySelectorAll(select.nav.links);
 
-    const idFromHash = window.location.hash.replace('#/', '');
+    const idFromHash = window.location.hash.replace("#/", "");
 
-    let pageMatchingHash = thisApp.pages[0].id;
+    let pageMatchingHash = "home";
 
     for (let page of thisApp.pages) {
       if (page.id == idFromHash) {
@@ -46,18 +46,18 @@ const app = {
     thisApp.activatePage(pageMatchingHash);
 
     for (let link of thisApp.navLinks) {
-      link.addEventListener('click', function (event) {
+      link.addEventListener("click", function (event) {
         const clickedElement = this;
         event.preventDefault();
 
         // get page id from href attributr
-        const id = clickedElement.getAttribute('href').replace('#', '');
+        const id = clickedElement.getAttribute("href").replace("#", "");
 
         // run thisApp.activatePage whit that id
         thisApp.activatePage(id);
 
         // change URL hash
-        window.location.hash = '#/' + id;
+        window.location.hash = "#/" + id;
       });
     }
   },
@@ -67,9 +67,9 @@ const app = {
     // add class active to matching page, remove from non-matching
     for (let page of thisApp.pages) {
       page.classList.toggle(classNames.pages.active, page.id == pageId);
-      if (page.id == 'product' && pageId == 'home') {
+      if (page.id == "product" && pageId == "home") {
         page.classList.add(classNames.pages.active);
-        console.log(page, classNames.pages.active);
+        //console.log(page, classNames.pages.active);
       }
     }
 
@@ -77,7 +77,7 @@ const app = {
     for (let link of thisApp.navLinks) {
       link.classList.toggle(
         classNames.nav.active,
-        link.getAttribute('href') == '#' + pageId
+        link.getAttribute("href") == "#" + pageId
       );
     }
   },

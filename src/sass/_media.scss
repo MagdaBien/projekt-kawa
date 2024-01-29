@@ -2,12 +2,12 @@
 
 @media (max-width: 578px) {
   h1 {
-    font-size: $medium2-size;
+    font-size: $medium2-size*0.9;
     text-align: center;
   }
 
   h2 {
-    font-size: $medium2-size;
+    font-size: $medium2-size*0.9;
     margin: 30px auto 10px auto;
   }
 
@@ -34,8 +34,10 @@
     width: 100%;
   }
 
+  .logo {   font-size: 26px; }
   .sublogo {
     letter-spacing: 2px;
+    font-size: $base-size*0.8;
   }
 
   p.aboutAs, p.aboutAsRight {
@@ -190,4 +192,10 @@
     margin: 0 0 10px 0;
     width: 30%;
   } 
+}
+
+@media (min-width: 992px)  {
+  #navbarSupportedContent {
+    display: block!important;
+  }
 }
